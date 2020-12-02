@@ -1,0 +1,98 @@
+@keyframes ldio-9c2oi9je6nn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.ldio-9c2oi9je6nn div {
+  left: 97.28999999999999px;
+  top: 50.714999999999996px;
+  position: absolute;
+  animation: ldio-9c2oi9je6nn linear 1.1235955056179776s infinite;
+  background: #1d0e0b;
+  width: 12.419999999999998px;
+  height: 22.77px;
+  border-radius: 6.209999999999999px / 11.385px;
+  transform-origin: 6.209999999999999px 52.785px;
+}
+.ldio-9c2oi9je6nn div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.0299625468164795s;
+  background: #1d0e0b;
+}
+.ldio-9c2oi9je6nn div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -0.9363295880149813s;
+  background: #1d0e0b;
+}
+.ldio-9c2oi9je6nn div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.8426966292134832s;
+  background: #1d0e0b;
+}
+.ldio-9c2oi9je6nn div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.7490636704119851s;
+  background: #1d0e0b;
+}
+.ldio-9c2oi9je6nn div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.6554307116104869s;
+  background: #1d0e0b;
+}
+.ldio-9c2oi9je6nn div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.5617977528089888s;
+  background: #1d0e0b;
+}
+.ldio-9c2oi9je6nn div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.46816479400749067s;
+  background: #1d0e0b;
+}
+.ldio-9c2oi9je6nn div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.37453183520599254s;
+  background: #1d0e0b;
+}
+.ldio-9c2oi9je6nn div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.2808988764044944s;
+  background: #1d0e0b;
+}
+.ldio-9c2oi9je6nn div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.18726591760299627s;
+  background: #1d0e0b;
+}
+.ldio-9c2oi9je6nn div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.09363295880149813s;
+  background: #1d0e0b;
+}
+.ldio-9c2oi9je6nn div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+  background: #1d0e0b;
+}
+.loadingio-spinner-spinner-orx51h0jky {
+  width: 207px;
+  height: 207px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-9c2oi9je6nn {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-9c2oi9je6nn div {
+  box-sizing: content-box;
+}

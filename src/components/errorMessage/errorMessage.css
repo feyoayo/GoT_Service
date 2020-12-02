@@ -1,0 +1,22 @@
+html {
+  background: black;
+}
+
+.errorBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.errMsg {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+img {
+  width: 100%;
+}

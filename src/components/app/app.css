@@ -1,0 +1,8 @@
+.toggler-button {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(25, 158, 158);
+}
