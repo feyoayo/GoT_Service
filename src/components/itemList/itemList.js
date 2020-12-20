@@ -7,7 +7,7 @@ export default class ItemList extends Component {
   gotService = new GotService();
 
   state = {
-    //Создаем начальное значение чтобы сюда из промиса можно было затем передать список персонажей
+    //Создаем начальное значение чтобы сюда из промиса можно было затем передать список итемов
     itemList: null,
     error: false,
   };
@@ -15,11 +15,14 @@ export default class ItemList extends Component {
   componentDidMount() {
     const { getData } = this.props;
 
+    //Вместо прямого вызова нашего сервиса, чтобы не дублировать передаем уровнем выше через пропс функцию, в которой уже вызываем необходимый сервис ( книги, персонажи, дома), ну а дальше работаем с ней, как с обычным промисом
     getData().then((itemList) => {
       this.setState({ itemList });
     });
   }
+
   componentDidCatch() {
+    //хук который обрабатывает ошибки
     this.setState({
       error: true,
     });

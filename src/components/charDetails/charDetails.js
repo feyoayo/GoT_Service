@@ -5,11 +5,11 @@ import Spinner from "../spinner/spinner";
 import CharTemplate from "./charTemplate";
 import ErrorMessage from "../errorMessage/errorMessage";
 
-const Field = ({ item, field, label }) => {
+const Field = ({ char, field, label }) => {
   return (
     <li className="list-group-item d-flex justify-content-between">
       <span className="term">{label}</span>
-      <span>{item[field]}</span>
+      <span>{char[field]}</span>
     </li>
   );
 };
@@ -75,13 +75,16 @@ export default class CharDetails extends Component {
         </div>
       );
     }
-    console.log(this.state.char);
 
+    const { char } = this.state;
     return (
       <div className="char-details rounded">
-        {/* <CharTemplate charInfo={this.state.char} /> */}
         <h4>{this.state.char.name}</h4>
-        <ul className="list-group list-group-flush">{this.props.children}</ul>
+        <ul className="list-group list-group-flush">
+          {React.Children.map(this.props.children, (child) => {
+            return React.cloneElement(child, { char });
+          })}
+        </ul>
       </div>
     );
   }
