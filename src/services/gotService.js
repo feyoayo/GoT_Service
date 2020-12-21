@@ -56,22 +56,24 @@ export default class GotService {
       culture: char.culture || "no api info",
     };
   };
-  _transformHouse(house) {
+  _transformHouse =(house)=>{
     return {
-      name: house.name,
-      region: house.region,
-      words: house.words,
-      titles: house.titles,
-      overlord: house.overlord,
-      ancestralWeapons: house.ancestralWeapons,
+      id: this._extractId(house),
+      name: house.name || 'Shitty API havent name of this house',
+      region: house.region || "no api info",
+      words: house.words || "no api info",
+      titles: house.titles || "no api info",
+      overlord: house.overlord || "no api info",
+      ancestralWeapons: house.ancestralWeapons || "no api info",
     };
   }
-  _transformBook(book) {
+  _transformBook=(book)=> {
     return {
-      name: book.name,
-      numberOfPages: book.numberOfPages,
-      publiser: book.publiser,
-      released: book.released,
+      id: this._extractId(book),
+      name: book.name || "Shitty API hasn't name of this book!!",
+      numberOfPages: book.numberOfPages || "no api info",
+      publisher: book.publisher || "no api info",
+      released: book.released || "no api info",
     };
   }
 }

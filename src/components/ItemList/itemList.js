@@ -3,6 +3,7 @@ import "./itemList.css";
 import GotService from "../../services/gotService";
 import Spinner from "../spinner/spinner";
 import ErrorMessage from "../errorMessage/errorMessage";
+
 export default class ItemList extends Component {
   gotService = new GotService();
 
@@ -31,11 +32,11 @@ export default class ItemList extends Component {
   renderItems(arr) {
     //Будем брать массив данных полученных из сервиса. Рендерит элементы на странице
     return arr.map((item) => {
-      const { id, name } = item;
+      const { id } = item;
       const label = this.props.renderItem(item);
       return (
         <li
-          key={id}
+          key={Math.random()}
           className="list-group-item"
           onClick={() => {
             this.props.onItemSelected(id);
