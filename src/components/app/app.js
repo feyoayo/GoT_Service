@@ -8,8 +8,10 @@ import GotService from "../../services/gotService";
 import CharacterPage from "../pages/СharacterPage";
 import BooksPage from "../pages/BooksPage";
 import HousesPage from "../pages/HousesPage";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import BooksItem from "../pages/BooksItem";
+import NotFound from "../pages/NotFound";
+import HomePage from "../pages/HomePage";
 
 export default class App extends React.Component {
   gotService = new GotService();
@@ -60,17 +62,21 @@ export default class App extends React.Component {
                 {toggleButton}
               </Col>
             </Row>
-            <Route path="/characters" component={CharacterPage} />
-            <Route path="/houses" component={HousesPage} />
-            <Route path="/books" exact component={BooksPage} />
-            <Route
-              path="/books/:id"
-              render={({ match }) => {
-                console.log(match.params.id);
-                const id = match.params.id;
-                return <BooksItem bookId={id} />;
-              }}
-            />
+            <Switch>
+              <Route path="/" exact component={HomePage} />
+              <Route path="/characters" component={CharacterPage} />
+              <Route path="/houses" component={HousesPage} />
+              <Route path="/books/" exact component={BooksPage} />
+              <Route
+                path="/books/:id"
+                render={({ match }) => {
+                  console.log(match.params);
+                  const id = match.params.id;
+                  return <BooksItem bookId={id} />;
+                }}
+              />
+              <Route path="*" component={NotFound} />
+            </Switch>
           </Container>
         </div>
       </Router>

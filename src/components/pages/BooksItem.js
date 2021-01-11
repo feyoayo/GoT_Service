@@ -4,6 +4,7 @@ import ItemDetails, { Field } from "../ItemDetails";
 
 export default class BooksItem extends React.Component {
   gotService = new GotService();
+
   render() {
     console.log(this.props);
     return (
