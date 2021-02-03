@@ -1,8 +1,6 @@
-import React, {Component, useState, useEffect} from "react";
+import React, { useState, useEffect} from "react";
 import "./itemList.css";
-import GotService from "../../services/gotService";
 import Spinner from "../spinner/spinner";
-import ErrorMessage from "../errorMessage/errorMessage";
 
 
 function ItemList({getData, onItemSelected, renderItem}) {
